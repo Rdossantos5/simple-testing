@@ -9,5 +9,11 @@ pipeline {
             checkout scm
          }
       }
+      stage('Build') {
+           steps {
+              sh 'mvn clean verify'
+           }
+        }
+
    }
 }
