@@ -18,4 +18,5 @@ public class Wallet {
         if ((balance - amount) < 0) throw new IllegalArgumentException("The result will end up negative try again");
         this.balance -= amount;
     }
+
 }
